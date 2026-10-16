@@ -115,11 +115,12 @@
 
         .section {
             display: none;
-            animation: fadeIn 0.4s ease forwards;
         }
 
+        /* Sikrer at den aktive fane rent faktisk bliver vist på skærmen */
         .section.active {
-            display: block;
+            display: block !important;
+            animation: fadeIn 0.4s ease forwards;
         }
 
         h2 {
@@ -138,9 +139,9 @@
 
         .welcome-box {
             text-align: center;
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2rem 0;
+            padding: 1.5rem 0;
         }
 
         .brand-logo-large {
@@ -341,7 +342,6 @@
 
     <header>
         <div class="logo-container">
-            <!-- Mini-logo i menuen -->
             <img src="logo.png" alt="TurboTeddyDK Logo" class="brand-logo-mini">
             <div class="logo">Turbo<span>Teddy</span>DK</div>
         </div>
