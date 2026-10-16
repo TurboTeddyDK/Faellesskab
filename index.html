@@ -113,10 +113,12 @@
             text-decoration: underline;
         }
 
+        /* Rettet fane-styring: Skjuler alle sektioner som standard */
         .section {
-            display: none;
+            display: none !important;
         }
 
+        /* Viser KUN den sektion, der har klassen 'active' */
         .section.active {
             display: block !important;
             animation: fadeIn 0.4s ease forwards;
@@ -151,6 +153,7 @@
             border: 4px solid var(--accent-color);
             margin-bottom: 1.5rem;
             box-shadow: 0 0 20px rgba(50, 205, 50, 0.2);
+            display: inline-block;
         }
 
         .grid {
@@ -359,4 +362,3 @@
     </header>
 
     <main>
-        <div class="legal-top-bar">
